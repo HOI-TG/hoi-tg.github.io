@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>HOI-TG</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">
+              <font color="#A7C5FB">HOI-TG</font>: End-to-End HOI Reconstruction Transformer with Graph-based Encoding
+            </h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                Zhenrong Wang<sup>1</sup>,
+              </span>
+              <span class="author-block" style="display: inline;">
+                <a href="https://qizhust.github.io/">Qi Zheng</a><sup>1</sup>,</span>
+              <span class="author-block">
+                Sihan Ma<sup>2</sup>,</span>
+              <span class="author-block">
+                Maosheng Ye<sup>3</sup>,</span>
+              <span class="author-block">
+                Yibing Zhan<sup>4</sup>,</span>
+              <span class="author-block">
+                Dongjiang Li<sup>4</sup></span>
+              </span>
+            </div>
+            
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Shenzhen University,</span>
+              <span class="author-block"><sup>2</sup>University of Sydney,</span>
+              <span class="author-block"><sup>3</sup>DeepRoute.AI,</span>
+              <span class="author-block"><sup>4</sup>JD Explore Academy</span>
+            </div>
+            <h2 style="color: red; font-size: 2.5rem; font-weight: bold; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); margin-top: 20px; margin-bottom: 15px;">
+              CVPR2025
+            </h2>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/ZhenrongWang/hoitg" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <!--<span class="link-block">
+                  <a href="https://youtu.be/iQ8TfEae1ao" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                    </span>
+                    <span>Video</span>
+                  </a>
+                </span>-->
+                <!-- Dataset Link. -->
+                <!-- <span class="link-block">
+                <a href="https://1drv.ms/f/s!Ap-t7dLl7BFUfmNkrHubnoo8LCs?e=1h0Xhe"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Dataset (pre-released version)</span>
+                  </a> -->
+                <!-- Dataset Link. -->
+                <!-- <span class="link-block">
+                <a href="https://www.dropbox.com/scl/fo/8w7xir110nbcnq8uo1845/AOaHUxGEcR0sWvfmZRQQk9g?rlkey=xnhajvn71ua5i23w75la1nidx&st=9t8ofde7&dl=0"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Dataset (V1)</span>
+                  </a> -->
+                <!-- Code Link. -->
+                <span class="link-block">
+                <a href="https://github.com/ZhenrongWang/hoitg"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code--Coming Soon</span>
+                  </a>
+              </span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img id="teaser" src="./static/images/compressed_pipeline3.jpg">
+      <h2 class="subtitle has-text-centered">
+        <p><b>
+          <font color="#A7C5FB">HOI-TG</font> is an end-to-end transformer framework for 3D human-object interaction (HOI) reconstruction from a single image. 
+          It innovatively utilizes self-attention to implicitly model the contact between humans and objects. 
+          The model achieves state-of-the-art performance on the BEHAVE and InterCap datasets, improving human and object reconstruction accuracy by 8.9% and 8.6% on InterCap, respectively. 
+          This demonstrates the robust integration of global posture and fine-grained interaction modeling without explicit constraints.</p>
+      </h2>
+    </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img id="teaser" src="./static/images/compressed_nmotivation1.jpg">
+      <h2 class="subtitle has-text-centered" style="font-size: 1.1em;">
+        <p>Several studies integrate interaction representations for joint human-object reconstruction:</p>
+<ul>
+    <li><strong>(i) StackFLOW</strong> models spatial relationships using human-object offsets from surface anchors.</li>
+    <li><strong>(ii) CHORE</strong> predicts a part correspondence field to identify contact points.</li>
+    <li><strong>(iii) CONTHO</strong> estimates vertex-level contact maps to mitigate erroneous correlations.</li>
+</ul>
+        </h2>
+    </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img id="teaser" src="./static/images/compressed_nmotivation2.jpg">
+      <h2 class="subtitle has-text-centered" style="font-size: 1.1em;">
+        <p>While contact constraints aid HOI reconstruction, they introduce a conflict: global positioning is key for mesh reconstruction, whereas interaction constraints emphasize local relationships. Balancing these is challenging—e.g., <strong>StackFLOW</strong> requires costly post-optimization for quality improvement. To overcome this, we propose a transformer-based framework that implicitly integrates interaction-aware reconstruction without explicit constraints.</p></h2>
+    </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body" style="display: flex; align-items: center;">
+      <div style="flex: 1;">
+        <h2 class="subtitle" style="font-size: 1.2em; text-align: left;">
+          <b>
+            <p><strong>HOI-TG</strong> outperforms previous models in terms of mesh reconstruction, contact reconstruction accuracy, and running speed. The results demonstrate that <strong>HOI-TG</strong> achieves better global mesh reconstruction and higher-quality contact areas. Such improvements directly showcase the effectiveness of our straightforward transformer encoder and graph convolutional structures, which implicitly learn the interactions between humans and objects.</p>
+          </b>
+        </h2>
+      </div>
+      <div style="flex: 1;">
+        <img id="teaser" src="./static/images/bar.jpg" style="max-width: 100%; height: auto;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img id="teaser" src="./static/images/compressed_visual1.jpg">
+      <h2 class="subtitle" style="font-size: 1.1em; text-align: left;">
+        <p><b>
+          &nbsp; &nbsp; We use the average of attention values from each human vertex to all object vertices as the attention value of that human vertex towards the object.</p>  
+
+          &nbsp; &nbsp; For simple and static interactions, the positions of objects only relate to local body parts. For instance, the positions of a chair, table, monitor, and basketball solely depend on the locations of the interacting body parts.</p>  
+          
+          &nbsp; &nbsp;In contrast, for complex interactions, such as sitting on a chair while using a keyboard or moving with a suitcase, our model successfully attends to non-local body parts and leverages non-local vertices to predict the positions of the objects.</p>
+          
+        </h2>
+    </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img id="teaser" src="./static/images/compressed_quality.jpg">
+      <h2 class="subtitle has-text-centered" style="font-size: 1.em;">
+        <p><b>
+          Reconstruction quality results on BEHAVE and InterCap datasets
+        </h2>
+    </div>
+</section>
+
+
+<!-- Abstract -->
+<section>
+  <div class="container is-max-desktop">
+
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>With the diversification of human-object interaction (HOI) applications and 
+              the success of capturing human meshes, 
+              HOI reconstruction has gained widespread attention. 
+              Existing mainstream HOI reconstruction methods often rely on explicitly modeling interactions between humans and objects. 
+              However, such a way leads to a natural conflict between 3D mesh reconstruction, 
+              which emphasizes global structure, and fine-grained contact reconstruction, 
+              which focuses on local details. 
+              To address the limitations of explicit modeling, 
+              we propose the End-to-End HOI Reconstruction Transformer with Graph-based Encoding (HOI-TG). 
+              It implicitly learns the interaction between humans and objects by leveraging self-attention mechanisms. Within the transformer architecture, 
+              we devise graph residual blocks to aggregate the topology among vertices of different spatial structures. 
+              This dual focus effectively balances global and local representations. Without bells and whistles, HOI-TG achieves state-of-the-art performance on BEHAVE and InterCap datasets. Particularly on the challenging InterCap dataset, our method improves the reconstruction results for human and object meshes by 8.9% and 8.6%, respectively.
+
+          </div>
+        </div>
+      </div>
+</section>
+<!--/ Abstract. -->
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
